@@ -1,12 +1,9 @@
 """
-Initialize the src package.
+Services package.
 
-This package contains all modules required to run the MountainHub backend,
-including database models, API routes and business logic services. It is
-structured to separate concerns clearly between persistence (models), REST
-endpoints (routes) and integration with third‑party APIs or business logic
-(services). Refer to the README for details on available endpoints and
-usage.
+This package contains business logic that does not belong to the web layer or
+the database models. Services can be reused by multiple routes or other
+components. For example, the ``external_apis`` module wraps calls to
+third‑party APIs, and the ``equipment_configurator`` module generates
+personalised gear recommendations.
 """
-
-# Nothing to execute at the top level
