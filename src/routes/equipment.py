@@ -10,7 +10,7 @@ additional recommendation logic lives in ``src.services.equipment_configurator``
 from flask import Blueprint, request, jsonify
 
 from ..models import db, Equipment
-from ..services.equipment_configurator import EquipmentConfiguratorService
+from ..equipment_configurator import EquipmentConfiguratorService
 
 
 equipment_bp = Blueprint('equipment', __name__)
