@@ -9,7 +9,7 @@ delegates the heavy lifting to the service classes defined in
 
 from flask import Blueprint, request, jsonify
 
-from ..services.external_apis import WeatherService, TrailService, RefugeService
+from ..external_apis import WeatherService, TrailService, RefugeService
 
 
 external_bp = Blueprint('external', __name__)
